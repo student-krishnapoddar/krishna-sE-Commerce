@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="item name">
+    <input type="text" placeholder="image">
+    <input type="text" placeholder="Description">
+    <input type="text" placeholder="phone no.">
+    <input type="text" placeholder="price">
+    <button type="submit">submit</button>
+
+    <script>
+        var product,myarr;
+               function abc(){
+                product=document.querySelectorAll("input,button");
+                console.log(product);
+               }
+               abc();
+                myarr=[];
+              product[5].addEventListener("click",()=>{
+
+    myarr.push({item:product[0].value, image:product[1].value, description:product[2].value, phone:product[3].value, price:product[4].value});
+    console.log(myarr);
+    localStorage.setItem("productItem",JSON.stringify(myarr));
+    product[0].value="";
+    product[1].value="";
+    product[2].value="";
+    product[3].value="";
+    product[4].value="";
+  })
+               
+               
+    </script>
+</body>
+</html>

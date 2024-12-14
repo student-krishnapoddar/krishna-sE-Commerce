@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krishna's</title>
+  <link rel="icon" type="image/png" href="/images/logo.png">
+  <style>
+    @import url('./lib/bootstrap-5.3.3/dist/css/bootstrap.css');
+    @import url('./lib/font-awesome-4.7.0/css/font-awesome.css');
+    /* @import url('./css/style.css'); */
+  </style>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<bod>
+
+  <!-- -------------------------Navebar------------------------------- -->
+
+  <nav class="navbar shadow bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="/index.html"></a>
+      <button class="navbar-toggler cus-toggler" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <i class="fa fa-bars cus-bars"></i>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Krishna's Ecommerce</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/product.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/product list/index.html">Product List</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+        <form>
+          <button type="button" class="btn btn-outline-primary cus-btn1" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Sign up
+          </button>
+        </form>
+        <form>
+          <button type="button" class="btn btn-outline-primary cus-btn2" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Log in
+          </button>
+        </form>
+      </div>
+      <!-- -------------------------login page------------------------------- -->
+      <form>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Login
+        </button>
+      </form>
+    </div>
+  </nav>
+  <!-- -------------------------login page------------------------------- -->
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Krishna's Ecommerce</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- =============================== -->
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="user" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <ul>
+                <input type="password" class="form-control" id="pass" placeholder="Password">
+              </ul>
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="myform()">Submit</button>
+          </form>
+          <!-- ====================================== -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------------------------Card containe------------------------------- -->
+
+  <!-- -------------------------footer------------------------------- -->
+
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>ABOUT</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Contact Us</a></li>
+            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-muted">About Us</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Careers</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Krishna's Stories</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Information</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>GROUP COMPANIES</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Myntra</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Cleatrip</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Shopsy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>HELP</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Payments</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Shipping</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Cancellation & Returns</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our Krishna's Stories</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2022 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./lib/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+  <script src="./lib/jquary.js"></script>
+  <script src="./js/script.js"></script>
+  </body>
+
+</html>
